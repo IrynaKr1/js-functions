@@ -31,14 +31,30 @@ const triangleArea = function (base, height) {
   }
 };
 
-console.log(triangleArea(2,5));
-
-function coneSurfaceArea (radius, slantHeight) {
-     if (radius > 0 && slantHeight > 0) {
-    return Math.PI * radius *slantHeight;
+function coneSurfaceArea(radius, slantHeight) {
+  if (radius > 0 && slantHeight > 0) {
+    return Math.PI * radius * slantHeight;
   } else {
     return 'Error: the sides must be positive numbers.';
   }
-};
+}
 
-console.log (coneSurfaceArea(2,3));
+// 5
+
+function isPrimeNumber(number) {
+  if (number <= 1) return false;
+  if (number === 2) return true;
+  if (number % 2 === 0) return false;
+
+  for (let i = 3; i <= Math.sqrt(number); i += 2) {
+    if (number % i === 0) return false;
+  }
+
+  return true;
+}
+
+console.log(isPrimeNumber(2)); 
+console.log(isPrimeNumber(4)); 
+console.log(isPrimeNumber(17)); 
+console.log(isPrimeNumber(1)); 
+console.log(isPrimeNumber(97));
