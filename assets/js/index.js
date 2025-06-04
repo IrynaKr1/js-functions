@@ -22,7 +22,12 @@ const isTriangle = function (a, b, c) {
 };
 
 // 4
-
+/**
+ * Calculates area of triangle
+ * @param {number} base - Length of the base of the triangle
+ * @param {number} height - height/altitude of the triangle
+ * @returns {number} Based on formula 0.5*base*height
+ */
 const triangleArea = function (base, height) {
   if (base > 0 && height > 0) {
     return 0.5 * base * height;
@@ -41,6 +46,14 @@ function coneSurfaceArea(radius, slantHeight) {
 
 // 5
 
+/**
+ * Checks if the number is prime.
+ *
+ * A prime number is a positive integer that has only two divisors: 1 and itself.
+ * @param {number} number - The number to check.
+ * @returns {boolean} Returns true if the number is prime, and false if not.
+ */
+
 function isPrimeNumber(number) {
   if (number <= 1) return false;
   if (number === 2) return true;
@@ -53,8 +66,8 @@ function isPrimeNumber(number) {
   return true;
 }
 
-console.log(isPrimeNumber(2)); 
-console.log(isPrimeNumber(4)); 
-console.log(isPrimeNumber(17)); 
-console.log(isPrimeNumber(1)); 
+console.log(isPrimeNumber(2));
+console.log(isPrimeNumber(4));
+console.log(isPrimeNumber(17));
+console.log(isPrimeNumber(1));
 console.log(isPrimeNumber(97));
