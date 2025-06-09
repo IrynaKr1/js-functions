@@ -1,12 +1,15 @@
 // 1
 function isWorkingAgePerson(age) {
-  return age >= 16 && age <= 64 ? true : false;
+  return age >= 16 && age <= 64;
 }
-
+console.log('isWorkingAge', isWorkingAgePerson(11));
 // 2
 function checkMultiplicity(num1, num2) {
-  return num1 % num2 === 0 ? true : false;
+  return num1 % num2 === 0; 
 }
+
+console.log('checkMultiplicity', checkMultiplicity(2.5,2));
+// 2
 
 // 3
 const isTriangle = function (a, b, c) {
